@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:id="@+id/layout1"
+    android:background="@drawable/bgterms">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="616dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Fl Studio 20"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp"
+                app:fontFamily="@font/khand_light" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center|right"
+                app:srcCompat="@drawable/flstudioblanco" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_gravity="center"
+            android:text='When used in this IMAGE LINE End User License Agreement (EULA), the following terms shall have the following meaning:     Image Line: Image Line nv, with registered office at Franklin Rooseveltlaan 348/D, BE-9000 Ghent (Belgium) also known as Image-Line and Image Line Software, and with company registration number BE 0452.440.860, webmaster@image-line.com ALPHA / BETA version: Software that has been provided for development and testing purposes of the software itself. Alpha / Beta software is not commercially released, but delivered by restricted distribution systems, such as the User forums or App Store, closed testing, Alpha / Beta systems. Cracked: Software that circumvents Image Line software copy protection and or licensing systems by unlocking the software for use without the user making a formal and correct payment to Image Line through recognized commercial channels. Demo Songs: The demo song and content distributed in or with any product package of the Software, including, but not limited to, digitally recorded sounds, MIDI or FL STUDIO format song files, loops, samples, rhythm patterns or patches and digitally reproduced music; EULA: This End User License Agreement and all the Annexes thereto; Box version: Software sold and delivered to the User in a physical box. Software: All present and future versions program applications or content produced and or distributed by Image Line, including but not limited to, FL STUDIO, FL STUDIO MOBILE, IMAGE-LINE REMOTE, plugins, plugin content and related software products, as well as any updates, upgrades or maintenance releases; User: Every natural who is over 16 year of age or legal person who has downloaded IMAGE LINE SOFTWARE and thus has accepted the IMAGE LINE SOFTWARE End User License Agreement. For legal entities, the User includes any entity that controls, is controlled by, or is under common control with the User. For purposes of this definition, "control" means (i) the power, direct or indirect, to cause the direction or management of such entity, whether by contract or otherwise, or (ii) ownership of fifty percent (50%) or more of the outstanding shares, or (iii) beneficial ownership of such entity; Website: www.image-line.com and derivatives developed and administered by Image Line (such as but not limited to): www.flstudio.com , www.flstudiomobile.com, www.image-line.com, www.imageline.com, www.samplefusion.com and www.sytrus.com. Web Shop: The web shop of Image Line accessed from the company Website/s.'
+            android:textColor="#FFFFFF"
+            android:textSize="9sp" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#ffffff"
+            android:text="I accept the Terms of Service"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/boton"
+            android:text="Aceptar"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

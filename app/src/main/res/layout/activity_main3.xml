@@ -1,0 +1,840 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".Main3Activity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="616dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/samplepackbacground"
+                android:gravity="center"
+                android:text="Sample Packs"
+                android:textColor="#FFFFFF"
+                app:fontFamily="sans-serif" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bordesletras">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="170dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center|left"
+                    android:padding="10dp"
+                    android:text="Add samples in your folder"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="190dp"
+                        android:layout_height="50dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="center|right"
+                        android:padding="10dp"
+                        android:text="/storage/emulated/flstudiopacks/"
+                        android:textColor="#5E5E5E"
+                        android:textSize="10sp" />
+                </TableRow>
+
+            </TableRow>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@android:color/transparent">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="start|top|left"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/soundwave" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center|left"
+                        android:paddingStart="45dp"
+                        android:paddingLeft="45dp"
+                        android:text="Dynamic Kicks"
+                        android:textColor="#FFFFFF" />
+
+                    <FrameLayout
+                        android:layout_width="348dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center">
+
+                        <Button
+                            android:id="@+id/button2"
+                            android:layout_width="110dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="top"
+                            android:background="@drawable/reproducirkick"
+                            android:text="Kick Minimalistic"
+                            android:textAllCaps="false"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/button3"
+                            android:layout_width="110dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center|left"
+                            android:background="@drawable/reproducirkick"
+                            android:paddingRight="19dp"
+                            android:text="Kick Dynamic"
+                            android:textAllCaps="false"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/button4"
+                            android:layout_width="110dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/reproducirkick"
+                            android:text="Kick Consolidate"
+                            android:textAllCaps="false"
+                            android:textSize="12sp" />
+
+                        <View
+                            android:id="@+id/view3"
+                            android:layout_width="85dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="bottom|right"
+                            android:background="@drawable/backgroundvolumesound" />
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|right"
+                            android:paddingRight="6dp"
+                            android:text="TextView"
+                            android:textColor="#FFFFFF"
+                            android:textSize="6sp"
+                            android:textStyle="bold|italic" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|right"
+                            android:paddingRight="6dp"
+                            android:text="TextView"
+
+                            android:textColor="#FFFFFF"
+                            android:textSize="6sp"
+                            android:textStyle="bold|italic" />
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|right"
+                            android:paddingRight="6dp"
+                            android:text="TextView"
+
+                            android:textColor="#FFFFFF"
+                            android:textSize="6sp"
+                            android:textStyle="bold|italic" />
+
+                        <TableRow
+                            android:layout_width="240dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right">
+
+                            <ProgressBar
+                                android:id="@+id/progressBar"
+                                style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                                android:layout_width="151dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top"
+                                android:padding="5dp"
+                                android:paddingLeft="0dp"
+                                android:progressTint="#ff4316" />
+
+                            <SeekBar
+                                android:id="@+id/seekBar2"
+                                style="@android:style/Widget.DeviceDefault.Light.SeekBar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="4dp"
+                                android:progressBackgroundTint="#ffffff"
+                                android:progressTint="#ffffff"
+                                android:thumbTint="#ff4316" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="240dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right">
+
+                            <ProgressBar
+                                android:id="@+id/progressBar7"
+                                style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                                android:layout_width="146dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:paddingLeft="5dp"
+                                android:progressTint="#ff4316" />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <SeekBar
+                                    android:id="@+id/seekBar3"
+                                    android:layout_width="89dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|right"
+                                    android:progressBackgroundTint="#ffffff"
+                                    android:progressTint="#ffffff"
+                                    android:thumbTint="#ff4316" />
+
+                                <SeekBar
+                                    android:id="@+id/seekBar4"
+                                    android:layout_width="89dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom|right"
+                                    android:padding="5dp"
+                                    android:progressBackgroundTint="#ffffff"
+                                    android:progressTint="#ffffff"
+                                    android:thumbTint="#ff4316" />
+                            </FrameLayout>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="240dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right">
+
+                            <ProgressBar
+                                android:id="@+id/progressBar9"
+                                style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                                android:layout_width="146dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:paddingLeft="5dp"
+                                android:paddingBottom="4dp"
+                                android:progressTint="#ff4316" />
+                        </TableRow>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="start|top|left"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/soundwave" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center|left"
+                        android:paddingStart="45dp"
+                        android:paddingLeft="45dp"
+                        android:text="Dynamic Claps"
+                        android:textColor="#FFFFFF" />
+
+                    <FrameLayout
+                        android:layout_width="348dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center">
+
+                        <Button
+                            android:id="@+id/button5"
+                            android:layout_width="110dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="top"
+                            android:background="@drawable/reproducirkick"
+                            android:paddingRight="22dp"
+                            android:text="Clap Timmer"
+                            android:textAllCaps="false"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/button6"
+                            android:layout_width="110dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center|left"
+                            android:background="@drawable/reproducirkick"
+                            android:paddingRight="26dp"
+                            android:text="Clap Detroit"
+                            android:textAllCaps="false"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/button7"
+                            android:layout_width="110dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/reproducirkick"
+                            android:paddingRight="16dp"
+                            android:text="Clap Clappers"
+                            android:textAllCaps="false"
+                            android:textSize="12sp" />
+
+                        <View
+                            android:id="@+id/view4"
+                            android:layout_width="85dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="bottom|right"
+                            android:background="@drawable/backgroundvolumesound" />
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|right"
+                            android:paddingRight="6dp"
+                            android:text="TextView"
+                            android:textColor="#FFFFFF"
+                            android:textSize="6sp"
+                            android:textStyle="bold|italic" />
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|right"
+                            android:paddingRight="6dp"
+                            android:text="TextView"
+
+                            android:textColor="#FFFFFF"
+                            android:textSize="6sp"
+                            android:textStyle="bold|italic"/>
+
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|right"
+                            android:paddingRight="6dp"
+                            android:text="TextView"
+
+                            android:textColor="#FFFFFF"
+                            android:textSize="6sp"
+                            android:textStyle="bold|italic"/>
+
+                        <TableRow
+                            android:layout_width="240dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right" >
+
+                            <ProgressBar
+                                android:id="@+id/progressBar2"
+                                style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                                android:layout_width="151dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top"
+                                android:padding="5dp"
+                                android:paddingLeft="0dp"
+                                android:progressTint="#ff4316"  />
+
+                            <SeekBar
+                                android:id="@+id/seekBar"
+                                style="@android:style/Widget.DeviceDefault.Light.SeekBar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="4dp"
+                                android:progressBackgroundTint="#ffffff"
+                                android:progressTint="#ffffff"
+                                android:thumbTint="#ff4316"  />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="240dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right" >
+
+                            <ProgressBar
+                                android:id="@+id/progressBar3"
+                                style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                                android:layout_width="146dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:paddingLeft="5dp"
+                                android:progressTint="#ff4316"  />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <SeekBar
+                                    android:id="@+id/seekBar5"
+                                    android:layout_width="89dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|right"
+                                    android:progressBackgroundTint="#ffffff"
+                                    android:progressTint="#ffffff"
+                                    android:thumbTint="#ff4316"/>
+
+                                <SeekBar
+                                    android:id="@+id/seekBar6"
+                                    android:layout_width="89dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom|right"
+                                    android:padding="5dp"
+                                    android:progressBackgroundTint="#ffffff"
+                                    android:progressTint="#ffffff"
+                                    android:thumbTint="#ff4316" />
+                            </FrameLayout>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="240dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right" >
+
+                            <ProgressBar
+                                android:id="@+id/progressBar4"
+                                style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                                android:layout_width="146dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:paddingLeft="5dp"
+                                android:paddingBottom="4dp"
+                                android:progressTint="#ff4316" />
+                        </TableRow>
+                    </FrameLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="start|top|left"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/soundwave" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center|left"
+                        android:paddingStart="45dp"
+                        android:paddingLeft="45dp"
+                        android:text="Dynamic Snares"
+                        android:textColor="#FFFFFF" />
+
+                    <FrameLayout
+                        android:layout_width="348dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center">
+
+                        <Button
+                            android:id="@+id/button10"
+                            android:layout_width="110dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="top"
+                            android:background="@drawable/reproducirkick"
+                            android:paddingRight="28dp"
+                            android:text="Snare Tech"
+                            android:textAllCaps="false"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/button9"
+                            android:layout_width="110dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center|left"
+                            android:background="@drawable/reproducirkick"
+                            android:paddingRight="24dp"
+                            android:text="Snare Pryda"
+                            android:textAllCaps="false"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/button8"
+                            android:layout_width="110dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/reproducirkick"
+                            android:paddingRight="35dp"
+                            android:text="Snare 80s"
+                            android:textAllCaps="false"
+                            android:textSize="12sp" />
+
+                        <View
+                            android:id="@+id/view5"
+                            android:layout_width="85dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="bottom|right"
+                            android:background="@drawable/backgroundvolumesound" />
+
+                        <TextView
+                            android:id="@+id/textView17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|right"
+                            android:paddingRight="6dp"
+                            android:text="TextView"
+                            android:textColor="#FFFFFF"
+                            android:textSize="6sp"
+                            android:textStyle="bold|italic"/>
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|right"
+                            android:paddingRight="6dp"
+                            android:text="TextView"
+
+                            android:textColor="#FFFFFF"
+                            android:textSize="6sp"
+                            android:textStyle="bold|italic" />
+
+                        <TextView
+                            android:id="@+id/textView19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|right"
+                            android:paddingRight="6dp"
+                            android:text="TextView"
+
+                            android:textColor="#FFFFFF"
+                            android:textSize="6sp"
+                            android:textStyle="bold|italic" />
+
+                        <TableRow
+                            android:layout_width="240dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"  >
+
+                            <ProgressBar
+                                android:id="@+id/progressBar6"
+                                style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                                android:layout_width="151dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top"
+                                android:padding="5dp"
+                                android:paddingLeft="0dp"
+                                android:progressTint="#ff4316"  />
+
+                            <SeekBar
+                                android:id="@+id/seekBar7"
+                                style="@android:style/Widget.DeviceDefault.Light.SeekBar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="4dp"
+                                android:progressBackgroundTint="#ffffff"
+                                android:progressTint="#ffffff"
+                                android:thumbTint="#ff4316"  />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="240dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"  >
+
+                            <ProgressBar
+                                android:id="@+id/progressBar8"
+                                style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                                android:layout_width="146dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:paddingLeft="5dp"
+                                android:progressTint="#ff4316"  />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <SeekBar
+                                    android:id="@+id/seekBar9"
+                                    android:layout_width="89dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|right"
+                                    android:progressBackgroundTint="#ffffff"
+                                    android:progressTint="#ffffff"
+                                    android:thumbTint="#ff4316" />
+
+                                <SeekBar
+                                    android:id="@+id/seekBar8"
+                                    android:layout_width="89dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom|right"
+                                    android:padding="5dp"
+                                    android:progressBackgroundTint="#ffffff"
+                                    android:progressTint="#ffffff"
+                                    android:thumbTint="#ff4316"/>
+                            </FrameLayout>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="240dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"  >
+
+                            <ProgressBar
+                                android:id="@+id/progressBar10"
+                                style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                                android:layout_width="146dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:paddingLeft="5dp"
+                                android:paddingBottom="4dp"
+                                android:progressTint="#ff4316" />
+                        </TableRow>
+                    </FrameLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="start|top|left"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/soundwave" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center|left"
+                        android:paddingStart="45dp"
+                        android:paddingLeft="45dp"
+                        android:text="Lo-Fi Words"
+                        android:textColor="#FFFFFF" />
+
+                    <FrameLayout
+                        android:layout_width="348dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center">
+
+                        <Button
+                            android:id="@+id/button12"
+                            android:layout_width="110dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="top"
+                            android:background="@drawable/reproducirkick"
+                            android:paddingRight="31dp"
+                            android:text="Lo-Fi Retro"
+                            android:textAllCaps="false"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/button11"
+                            android:layout_width="110dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center|left"
+                            android:background="@drawable/reproducirkick"
+                            android:paddingRight="18dp"
+                            android:text="Lo-Fi Handler"
+                            android:textAllCaps="false"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/button"
+                            android:layout_width="110dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/reproducirkick"
+                            android:paddingRight="20dp"
+                            android:text="Lo-Fi Nexxus"
+                            android:textAllCaps="false"
+                            android:textSize="12sp" />
+
+                        <View
+                            android:id="@+id/view6"
+                            android:layout_width="85dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="bottom|right"
+                            android:background="@drawable/backgroundvolumesound" />
+
+                        <TextView
+                            android:id="@+id/textView21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|right"
+                            android:paddingRight="6dp"
+                            android:text="TextView"
+
+                            android:textColor="#FFFFFF"
+                            android:textSize="6sp"
+                            android:textStyle="bold|italic"/>
+
+                        <TextView
+                            android:id="@+id/textView22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|right"
+                            android:paddingRight="6dp"
+                            android:text="TextView"
+
+                            android:textColor="#FFFFFF"
+                            android:textSize="6sp"
+                            android:textStyle="bold|italic"  />
+
+                        <TextView
+                            android:id="@+id/textView23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|right"
+                            android:paddingRight="6dp"
+                            android:text="TextView"
+
+                            android:textColor="#FFFFFF"
+                            android:textSize="6sp"
+                            android:textStyle="bold|italic" />
+
+                        <TableRow
+                            android:layout_width="240dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right">
+
+                            <ProgressBar
+                                android:id="@+id/progressBar11"
+                                style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                                android:layout_width="151dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top"
+                                android:padding="5dp"
+                                android:paddingLeft="0dp"
+                                android:progressTint="#ff4316" />
+
+                            <SeekBar
+                                android:id="@+id/seekBar11"
+                                style="@android:style/Widget.DeviceDefault.Light.SeekBar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="4dp"
+                                android:progressBackgroundTint="#ffffff"
+                                android:progressTint="#ffffff"
+                                android:thumbTint="#ff4316"/>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="240dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right" >
+
+                            <ProgressBar
+                                android:id="@+id/progressBar12"
+                                style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                                android:layout_width="146dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:paddingLeft="5dp"
+                                android:progressTint="#ff4316" />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <SeekBar
+                                    android:id="@+id/seekBar12"
+                                    android:layout_width="89dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|right"
+                                    android:progressBackgroundTint="#ffffff"
+                                    android:progressTint="#ffffff"
+                                    android:thumbTint="#ff4316" />
+
+                                <SeekBar
+                                    android:id="@+id/seekBar13"
+                                    android:layout_width="89dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom|right"
+                                    android:padding="5dp"
+                                    android:progressBackgroundTint="#ffffff"
+                                    android:progressTint="#ffffff"
+                                    android:thumbTint="#ff4316"/>
+                            </FrameLayout>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="240dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right" >
+
+                            <ProgressBar
+                                android:id="@+id/progressBar13"
+                                style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                                android:layout_width="146dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:paddingLeft="5dp"
+                                android:paddingBottom="4dp"
+                                android:progressTint="#ff4316"  />
+                        </TableRow>
+                    </FrameLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
